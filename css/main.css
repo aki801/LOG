@@ -1,0 +1,163 @@
+/* css/main*/
+
+
+/* INICIA LOGIN*/
+*{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body{
+    width: 100%;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+
+}
+h1{
+    font-size: 220%;
+    color: #fff;
+}
+h3{
+    font-size: 110%;
+    color: #4bacff;
+}
+header p{
+    font-size: 80%;
+    color: #fff;
+}
+p{
+    font-size: 50%;
+    color: #000;
+}
+
+#heart{
+    font-size: 100%;
+    color: #fff;
+}
+
+header{
+    padding-top: 2%;
+    line-height: 35%;
+    background-color: #84457e;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+section{
+    height: 18%; /*260px*/
+    width: 21%; /*250px*/
+    background-color: #fff;
+    right: auto;
+    left: auto;
+    padding: 2%;
+    border-top: 10px solid #4bacff; /*pregntar a kary porcentaje*/
+    border-bottom: 15px solid #4bacff;
+}
+
+section #form-header {
+    font-size: 120%;
+    color: #4bacff;
+    line-height: normal;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+form input {
+    width: 90%;
+    height: 30px;  /* preguntar a kary porcentaje*/
+    margin: 3%;
+    color: #4bacff;
+    text-align: center;
+    border-radius: 5px; /* preguntar a kary porcentaje*/
+    border: 1px solid #d0d0d0;
+}
+
+form button {
+    background-color: #4bacff;
+    color: #fff;
+    width: 90%;
+    height: 40px;
+    margin: 3%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 120%;
+    cursor:pointer;
+    box-shadow: none;
+    -webkit-transition:background .4s;
+    -ms-transition:background .4s;
+    -o-transition:background .4s;
+    -moz-transition:background .4s;
+    transition:background .4s;
+}
+
+section #mensaje{
+    height: 200%;
+    margin-top: 2%;
+    font-size: 70%;
+}
+form button:hover {
+    background-color: #3488d1;
+}
+section #form-footer {
+    font-size:120%;
+    color: #4bacff;
+    margin-top: 5%;
+}
+footer{
+    font-size: 100%;
+    color: #000;
+}
+/*TERMINA LOGIN*/
+
+
+
+
+/*INICIA MENSAJE ERROR*/
+
+section #me {
+    font-size:100%;
+    color: #4bacff;
+    line-height: normal;
+    margin-bottom: 2%;
+    margin-top: 8px;
+}
+
+section #me p {
+    font-size:100%;
+    color: #4bacff;
+    margin-bottom: 2%;
+
+
+}
+
+
+/*termina mensaje error*/
+
+
+
+
+
+/*CAPTCHA*/
+
+/*inicia validacioón ok captcha*/
+
+section #vok {
+    font-size:100%;
+    color: #4bacff;
+    line-height: normal;
+    margin-bottom: 2%;
+    margin-top: 15%;
+}
+
+/*termina validacioón ok captcha*/
+/*inicia validacioón x captcha*/
+section #vx {
+    font-size: 100%;
+    color: #4bacff;
+    line-height: normal;
+    margin-bottom: 2%;
+    margin-top: 15%;
+}
+
+/*termina validacioón x captcha*/

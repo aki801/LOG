@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Asistencias</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>TDW2.0</h1>
+        <h3>Hecho por <i id="heart">♥</i> <strong>TRIPAS CREATIVAS</strong></h3>
+        <a href="index.html"><p>1a Evaluación.</p></a>
+    </header>
+    <section id="form">
+        <div id="form-header">Registra tu Asistencia</div>
+        <form action="index.php" method="get">
+            <input type="text" placeholder="Usuario" name="usuario" required />
+            <input id="pass" type="password" placeholder="Contraseña" name="contraseña" required onkeyup="valida()" />
+            <div id="mensaje"><small>Lorem Ipsum</small></div>
+            <button id="ingresar" type="submit">Registro</button>
+            <div id="form-footer">Gracias</div>
+        </form>
+    </section>
+
+    <footer>
+        <h5>PADAS</h5>
+    </footer>
+    
+    <script>
+        /* Código en javascript para validar la longitud del campo de password */
+        function valida() {
+            /* Realiza la acción de validar */
+
+            /* var pass es equivalente al camp input del password del html */
+            var pass = document.getElementById('pass').value;
+
+            /* long será la longitud del password escrito por el usuario */
+            var long = pass.length;
+
+            var input = document.getElementById('pass');
+            var ingresar = document.getElementById('ingresar');
+            
+            if(long >=8) {
+                /* Botón en verde activo */
+                input.style.backgroundColor = "#fff";
+                input.style.color= "#84457e";
+                input.style.outlineColor = "#84457e";
+                ingresar.disabled=false;
+            } else {
+                /* Botón en rojo inactivo */
+                input.style.backgroundColor = "#84457e";
+                input.style.color= "#fff";
+                ingresar.disabled=true;
+            }
+
+            // alert(pass.length);
+        }
+    </script>
+</body>
+
+</html>
