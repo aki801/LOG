@@ -104,60 +104,87 @@ section #form-footer {
     color: #4bacff;
     margin-top: 5%;
 }
+
+/* ==================================================================
+        Estilos para el captcha
+================================================================== */
+div#captcha {
+    background-color: #fff;
+    width: 40%;
+    height: 90%;
+    margin-top: 0px auto;
+    padding: 1%;
+    border: 3px solid #ff6200;
+    border-radius: 8px;
+    box-shadow:inset  0px 0px 10px #000;
+    display: inline-block;
+}
+#captcha section {
+  margin-top: 15px;
+}
+
+div#captcha div.numeros {
+    width: 40px;
+    height: 15px;
+    padding: 1%;
+    margin: 0px auto;
+    /*border: 1px solid #ff6200;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow:inset  0px 0px 10px #000;*/
+    display: inline-block;
+}
+div#captcha div.signo {
+    background-color: #fff;
+    width: 10px;
+    height: 15px;
+    padding: 1%;
+
+
+    display: inline-block;
+}
+/*--   texto  "login" ---*/
+div#captcha form {
+    margin: 5% auto;
+}
+
+div#captcha form h1{
+     color: black:
+     text-align: center;
+     font-size: 40px;
+     margin: 0px auto;
+}
+
+div#captcha form input {
+    width: 40%;
+    height: 2%;
+    margin: 0px auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #ff6200;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+}
+/*--   botones ---*/
+
+div#captcha form button {
+    background-color: #0b9f1c;
+    color: #fff;
+    width: 50%;
+    height: 2%;
+    margin: 0% auto;
+    border-radius: 7px;
+    box-shadow: 0px 2px 0px;
+    font-size: 100%;
+    display: block;
+}
+    /* ==================================================================
+        terminan estilos de captcha
+    ================================================================== */
+
 footer{
     font-size: 100%;
     color: #000;
 }
 /*TERMINA LOGIN*/
-
-
-
-
-/*INICIA MENSAJE ERROR*/
-
-section #me {
-    font-size:100%;
-    color: #4bacff;
-    line-height: normal;
-    margin-bottom: 2%;
-    margin-top: 8px;
-}
-
-section #me p {
-    font-size:100%;
-    color: #4bacff;
-    margin-bottom: 2%;
-
-
-}
-
-
-/*termina mensaje error*/
-
-
-
-
-
-/*CAPTCHA*/
-
-/*inicia validacioón ok captcha*/
-
-section #vok {
-    font-size:100%;
-    color: #4bacff;
-    line-height: normal;
-    margin-bottom: 2%;
-    margin-top: 15%;
-}
-
-/*termina validacioón ok captcha*/
-/*inicia validacioón x captcha*/
-section #vx {
-    font-size: 100%;
-    color: #4bacff;
-    line-height: normal;
-    margin-bottom: 2%;
-    margin-top: 15%;
-}
-
-/*termina validacioón x captcha*/

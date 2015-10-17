@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantilla estatica HTML5</title>
+    <link rel="stylesheet" href="css/main.css"/>
+
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="cuadro1">
+                <div id="cuadro2">
+                    <h1>CONTROL DE ASISTENCIA TDW-2.0</h1>
+                </div>
+            </div>
+        </header>
+
+        <nav id="menu">
+            <span id="navegacion">
+                <a href="">ASISTENCIA |</a>
+                <a href="">REGISTRO</a>
+            </span>
+        </nav>
+
+        <article>
+            <section id="reflexion">
+                <p id="frase"> "//*llegando a /a c/ase de/ saber.... { por que aprender es el nunca dejar de buscar} >" </p>
+            </section>
+        </article>
+<!--*****************        captcha    ***************************************-->
+        <div id="captcha"><!--  captcha -->
+            <form action="" method="GET">
+              <h1>Captcha</h1>
+            <!-- recuadros txt-->
+              <section>
+                <script>
+                  var n1=(Math.floor(Math.random()*98)+1);
+                  var n2=(Math.floor(Math.random()*98)+1);
+                  //genera un numero al azar entre 1 y 99 y eel numero se guarda en n1 y n2
+
+                  var s=['+','-','X','/'];
+                  //arreglo de varios signos, para elegir una operacion a realizar
+                  var signtotales = s.length;
+                  //cuenta el numero total de signos(4 signos en total)
+                  var se=(Math.floor(Math.random()*signtotales));
+                  //genera un numero aleatorio entre 0 y signtotales(4)
+                  var muestrasign=s[se];
+                  //se asigna a muestrasign un elemento de s, puede ser un +, un -, una x o /
+
+                  document.write('<div id="n1" class="numeros">'+n1+'</div>');
+                  document.write('<div id="sign" class="signo"><strong>'+muestrasign+'</strong></div>');
+                  document.write('<div id="n2" class="numeros">'+n2+'</div>');
+
+                  if (muestrasign=="+") {
+                  /* Si muestrasign es igual al signo +,  se sumaran los numeros n1 y n2  */
+                    var resp=n1+n2;
+                  }
+                  if (muestrasign=="-") {
+                    var resp=n1-n2;
+
+                  }
+                  if (muestrasign=="/") {
+                    var respu=n1/n2;
+                    var resp= respu.toFixed()
+                    /*Con respu.toFixed() hacemos que el resultado se trunque,
+                    no se van a tomar en cuenta numeros despues del punto
+                    ejemplo: respu=23.44, la resp seria 23 */
+
+                  }
+                  if (muestrasign=="X") {
+                    var respu=n1*n2;
+                    var resp= respu.toFixed()
+                  }
+                  /*document.write('<div class="numeros">'+resp+'</div>');
+                  imprime la respuesta en pantalla
+                  */
+                </script>
+
+                <input id="respuesta" type="text" placeholder="Escribe tu resultado" name="resultado" required />
+                <button id="comprobar" type="submit" onclick="validar()">Comprobar</button>
+                <div id=msj></div>
+
+
+              </section>
+            </form>
+          </div><!-- termina contenido -->
+          <script>
+            function validar() {
+              /* Realiza la acción de validar */
+              var respuesta = document.getElementById('respuesta').value;
+              var input = document.getElementById('respuesta');
+              var comprobar = document.getElementById('comprobar');
+
+              if(resp == respuesta) {
+                alert("Bien!");
+
+              } else {
+                alert("Error");
+
+              }
+            }
+
+          </script>
+
+<!--******************       captcha    ***************************************-->
+    </div>
+
+</body>
+</html>
