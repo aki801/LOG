@@ -44,17 +44,6 @@ header{
     margin-bottom: 5%;
 }
 
-section{
-    height: 18%; /*260px*/
-    width: 21%; /*250px*/
-    background-color: #fff;
-    right: auto;
-    left: auto;
-    padding: 2%;
-    border-top: 10px solid #4bacff; /*pregntar a kary porcentaje*/
-    border-bottom: 15px solid #4bacff;
-}
-
 section #form-header {
     font-size: 120%;
     color: #4bacff;
@@ -63,17 +52,7 @@ section #form-header {
     margin-top: 4%;
 }
 
-form input {
-    width: 90%;
-    height: 30px;  /* preguntar a kary porcentaje*/
-    margin: 3%;
-    color: #4bacff;
-    text-align: center;
-    border-radius: 5px; /* preguntar a kary porcentaje*/
-    border: 1px solid #d0d0d0;
-}
-
-form button {
+/*form button {
     background-color: #4bacff;
     color: #fff;
     width: 90%;
@@ -89,7 +68,7 @@ form button {
     -o-transition:background .4s;
     -moz-transition:background .4s;
     transition:background .4s;
-}
+}*/
 
 section #mensaje{
     height: 200%;
@@ -113,14 +92,30 @@ div#captcha {
     width: 40%;
     height: 90%;
     margin-top: 0px auto;
+    right: auto;
+    left: auto;
     padding: 1%;
-    border: 3px solid #ff6200;
-    border-radius: 8px;
-    box-shadow:inset  0px 0px 10px #000;
+    border-top: 10px solid #4bacff;
+    border-bottom: 15px solid #4bacff;
+    /*
+    height: 18%;
+    width: 21%;
+    background-color: #fff;
+    right: auto;
+    left: auto;
+    padding: 2%;
+    border-top: 10px solid #4bacff;
+    border-bottom: 15px solid #4bacff;
+    */
     display: inline-block;
 }
 #captcha section {
   margin-top: 15px;
+}
+
+#captcha h1{
+    font-size: 220%;
+    color: purple;
 }
 
 div#captcha div.numeros {
@@ -161,23 +156,56 @@ div#captcha form input {
     margin: 0px auto;
     margin-bottom: 5%;
     margin-top: 5%;
-    color: #ff6200;
+    color: #4bacff;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+    display: block;
+    /*
+    width: 90%;
+    height: 30px;
+    margin: 3%;
+    color: #4bacff;
     text-align: center;
     border-radius: 5px;
-    display: block;
+    border: 1px solid #d0d0d0;
+    */
 }
 /*--   botones ---*/
 
 div#captcha form button {
-    background-color: #0b9f1c;
+    background-color: #4bacff
     color: #fff;
     width: 50%;
     height: 2%;
     margin: 0% auto;
-    border-radius: 7px;
-    box-shadow: 0px 2px 0px;
-    font-size: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 120%;
+    cursor:pointer;
+    box-shadow: none;
+    -webkit-transition:background .4s;
+    -ms-transition:background .4s;
+    -o-transition:background .4s;
+    -moz-transition:background .4s;
+    transition:background .4s;
     display: block;
+    /*
+    background-color: ;
+    color: #fff;
+    width: 90%;
+    height: 40px;
+    margin: 3%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 120%;
+    cursor:pointer;
+    box-shadow: none;
+    -webkit-transition:background .4s;
+    -ms-transition:background .4s;
+    -o-transition:background .4s;
+    -moz-transition:background .4s;
+    transition:background .4s;
+    */
 }
     /* ==================================================================
         terminan estilos de captcha
